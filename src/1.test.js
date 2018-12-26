@@ -1,11 +1,11 @@
 const solve = require("./1");
 
-test("list [10, 15, 3, 7] to contains two numbers that add up to 17", () => {
+test("list [10, 15, 3, 7] to contain two numbers that add up to 17", () => {
   const result = solve([10, 15, 3, 7], 17);
   expect(result).toBe(true);
 });
 
-test("list [82, 7, 28, 3] to contains two numbers that add up to 35", () => {
+test("list [82, 7, 28, 3] to contain two numbers that add up to 35", () => {
   const result = solve([82, 7, 28, 3], 35);
   expect(result).toBe(true);
 });
