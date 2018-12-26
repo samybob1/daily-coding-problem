@@ -1,31 +1,29 @@
-function containsAddUpTo(numbers, total) {
-    let left = 0;
-    let right = numbers.length - 1;
-    numbers.sort((a, b) => a - b);
+/**
+ * Given a list of numbers and a number k, return whether any two numbers from
+ * the list add up to k.
+ *
+ * @param {number[]} numbers
+ * @param {number} k
+ * @returns {boolean}
+ */
+module.exports = (numbers, k) => {
+  let left = 0;
+  let right = numbers.length - 1;
+  numbers.sort((a, b) => a - b);
 
-    while (left < right) {
-        const result = numbers[left] + numbers[right];
+  while (left < right) {
+    const result = numbers[left] + numbers[right];
 
-        if (result === total) {
-            return true;
-        }
-
-        if (result < total) {
-            left++;
-        } else {
-            right--;
-        }
+    if (result === k) {
+      return true;
     }
 
-    return false;
-}
+    if (result < k) {
+      left++;
+    } else {
+      right--;
+    }
+  }
 
-// Tests
-function test(numbers, total) {
-    console.log(`List "${numbers}" contains two numbers that add up to ${total}?`, containsAddUpTo(numbers, total));
-}
-
-test([10, 15, 3, 7], 17);
-test([82, 7, 28, 3], 35);
-test([13, 1, 82, 9], 20);
-test([5, 120, 2, 3], 99);
+  return false;
+};

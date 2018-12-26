@@ -1,4 +1,13 @@
+/**
+ * Binary tree node
+ */
 class Node {
+  /**
+   * @constructor
+   * @param {*} val - Node value
+   * @param {Node} [left=null]
+   * @param {Node} [right=null]
+   */
   constructor(val, left = null, right = null) {
     this.val = val;
     this.left = left;
@@ -6,6 +15,12 @@ class Node {
   }
 }
 
+/**
+ * Serializes the tree into a string
+ *
+ * @param {Node|null} root - The root to a binary tree
+ * @returns {string}
+ */
 const serialize = root => {
   let output = "";
 
@@ -20,8 +35,14 @@ const serialize = root => {
   return output;
 };
 
-const deserialize = input => {
-  const values = input.slice(0, -1).split(";");
+/**
+ * Deserializes the string back into the tree
+ *
+ * @param {string} serialized
+ * @returns {Node|null}
+ */
+const deserialize = serialized => {
+  const values = serialized.slice(0, -1).split(";");
   let index = 0;
 
   const read = () => {
@@ -36,23 +57,4 @@ const deserialize = input => {
   return read();
 };
 
-// Tests
-function test(node) {
-  const serialized = serialize(node);
-  const deserialized = deserialize(serialized);
-
-  console.log("serialized 1 time: ", serialized);
-  console.log("serialized 2 times:", serialize(deserialized));
-  console.log(
-    `deserialize(serialize(node)).left.left.val === 'left.left'?`,
-    deserialized.left.left.val === "left.left"
-  );
-}
-
-const node = new Node(
-  "root",
-  new Node("left", new Node("left.left")),
-  new Node("right")
-);
-
-test(node);
+module.exports = { Node, serialize, deserialize };
