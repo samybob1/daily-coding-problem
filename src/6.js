@@ -80,7 +80,7 @@ class Node {
 const memory = new Map();
 
 /**
- * Register a node into the fake memory
+ * Registers a node into the fake memory
  *
  * @param {Node} node
  */
@@ -95,7 +95,7 @@ const registerNode = node => {
 };
 
 /**
- * Return the fake memory address of a node
+ * Returns the fake memory address of a node
  *
  * @param {Node} node
  * @returns {number}
@@ -116,7 +116,7 @@ const getPointer = node => {
 };
 
 /**
- * Return the node associated to a fake memory address
+ * Returns the node associated to a fake memory address
  *
  * @param {number} address
  * @returns {Node}
