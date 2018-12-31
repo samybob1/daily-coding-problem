@@ -15,7 +15,7 @@
  * Implement car and cdr.
  */
 
-const { cons, car, cdr } = require("./5");
+const { cons, car, cdr } = require("./05");
 
 test("car(cons(3, 4) to return 3", () => {
   const result = car(cons(3, 4));

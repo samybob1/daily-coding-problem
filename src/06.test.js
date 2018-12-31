@@ -12,7 +12,7 @@
  * between nodes and memory addresses.
  */
 
-const { XORLinkedList } = require("./6");
+const { XORLinkedList } = require("./06");
 
 test("XOR linked list to add elements", () => {
   const list = new XORLinkedList();

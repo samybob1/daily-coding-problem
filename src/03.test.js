@@ -19,7 +19,7 @@
  * assert deserialize(serialize(node)).left.left.val == 'left.left'
  */
 
-const { Node, serialize, deserialize } = require("./3");
+const { Node, serialize, deserialize } = require("./03");
 
 const root = new Node(
   "root",

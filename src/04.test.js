@@ -12,7 +12,7 @@
  * You can modify the input array in-place.
  */
 
-const solve = require("./4");
+const solve = require("./04");
 
 test("integers [3, 4, -1, 1] to output 2", () => {
   const result = solve([3, 4, -1, 1]);

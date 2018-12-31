@@ -18,7 +18,7 @@
  *
  */
 
-const { Node, solve } = require("./8");
+const { Node, solve } = require("./08");
 
 const tree = new Node(
   0,

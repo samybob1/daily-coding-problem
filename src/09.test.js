@@ -10,7 +10,7 @@
  * Follow-up: Can you do this in O(N) time and constant space?
  */
 
-const solve = require("./9");
+const solve = require("./09");
 
 test("integers [2, 4, 6, 2, 5] to output 13", () => {
   const result = solve([2, 4, 6, 2, 5]);

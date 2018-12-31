@@ -11,7 +11,7 @@
  * allowed.
  */
 
-const solve = require("./7");
+const solve = require("./07");
 
 test("encoded message '111' to return a total of 3 decoded messages", () => {
   const result = solve("111");

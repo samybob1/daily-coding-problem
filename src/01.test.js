@@ -10,7 +10,7 @@
  * Bonus: Can you do this in one pass?
  */
 
-const solve = require("./1");
+const solve = require("./01");
 
 test("list [10, 15, 3, 7] to contain two numbers that add up to 17", () => {
   const result = solve([10, 15, 3, 7], 17);

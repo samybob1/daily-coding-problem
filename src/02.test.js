@@ -12,7 +12,7 @@
  * Follow-up: what if you can't use division?
  */
 
-const solve = require("./2");
+const solve = require("./02");
 
 test("integers [1, 2, 3, 4, 5] to output [120, 60, 40, 30, 24]", () => {
   const result = solve([1, 2, 3, 4, 5]);
