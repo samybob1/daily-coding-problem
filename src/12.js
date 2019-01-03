@@ -22,8 +22,8 @@ module.exports = (n, x = [1, 2]) => {
  * Returns total of solutions and remaining values to process
  *
  * @param {number} steps - Number of steps climbed so far
- * @param n - Number of steps of the staircase
- * @param x - Number of steps you can climb at a time
+ * @param {number} n - Number of steps of the staircase
+ * @param {number[]} x - Number of steps you can climb at a time
  * @returns {[number, number[]]}
  */
 const process = (steps, n, x) => {
