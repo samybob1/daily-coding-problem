@@ -29,3 +29,8 @@ test("a staircase with 4 steps, climbing 1, 3 or 5 steps at a time, to be climbe
   const result = solve(4, [1, 3, 5]);
   expect(result).toBe(3);
 });
+
+test("a staircase with 5 steps, climbing 1, 3 or 5 steps at a time, to be climbed with 5 unique ways", () => {
+  const result = solve(5, [1, 3, 5]);
+  expect(result).toBe(5);
+});

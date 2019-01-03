@@ -30,7 +30,7 @@ const process = (steps, n, x) => {
   const toProcess = [];
   let solutions = 0;
 
-  if (steps === x) {
+  if (steps === n) {
     solutions++;
   } else {
     x.forEach(step => {
