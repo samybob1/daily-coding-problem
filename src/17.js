@@ -14,7 +14,6 @@ module.exports = fs => {
 
     if (node.isLeaf()) {
       const path = node.getPath();
-      console.log(path, path.length);
 
       if (path.length > result) {
         result = path.length;
